@@ -1,0 +1,402 @@
+@font-face {
+    font-family: 'airbnb';
+    src: url(../../asset/fonts/AirbnbCereal_W_Bd.otf);
+
+    font-family: 'airbnb2';
+    src: url(../../asset/fonts/AirbnbCereal_W_Lt.otf);
+
+}
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    div{
+        font-family: Inter;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    div{
+        font-family: Inter;
+    }
+    
+body{
+    /* background-color: green !important; */
+    margin: 0px;
+    padding: 0px;
+}
+/* navbar */
+.nav-link{
+    font-family: airbnb ;
+    font-size: 18px !important;
+    color: #2E266F !important;
+    text-decoration: none;
+}
+
+.active {
+    font-weight: bold !important;
+    border-bottom: #2E266F 5px solid !important;
+  }
+
+/* hero section */
+#hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: white;
+}
+.leftside{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+}
+.left {
+    height: 100vh;
+    background-color: white;
+    width: 80%;
+}
+.judul{
+    height: 100vh;
+}
+
+.decoration {
+    height: 108vh;
+    display: flex;
+    background-color: #efc81a;
+    width: 20%;
+    align-items: center;
+}
+
+.decoration img{
+    position: absolute;
+    height: 480px;
+    width: 650px;
+    right: 100px;
+}
+.title{
+    font-family: airbnb;
+    color: #2E266F ;
+    font-size: 65px;
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+.cari{
+    height: 50px;
+    width: 500px !important;
+    margin-left: 100px;
+}
+
+#cari2{
+    background-color: #EFEFEF !important;
+}
+
+#cari2:focus {
+    outline: none !important;
+    border: 1px solid #efc81a;
+    box-shadow: 0 0 10px #efc81a;
+}
+
+/* popular for you */
+#hero2 {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.kotak img{
+    margin-left: 140px;
+}
+
+.pfy{
+    margin-top: -100px;
+    margin-left: 180px;
+    font-family: airbnb;
+    font-size: 48px;
+    color: #3F3A3A;
+}
+
+.square{
+    width: 500px;
+    height: 420px;
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 200px;
+    z-index: 1;
+}
+
+.bread{
+    height: 450px;
+    width: 600px;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 50px;
+    z-index: 2;
+}
+
+.popularfood{
+    height: 100vh;
+}
+
+.quick{
+    margin-top: 250px !important;
+}
+.quick h1{
+    font-family: airbnb;
+    color: #3F3A3A;
+    font-size: 56px;
+}
+
+.quick p{
+    font-family: airbnb2;
+    color: #3F3A3A;
+    font-size: 24px;
+}
+
+.btn-send{
+    background-color: #EFC81A !important;
+    font-family: airbnb;
+    font-size: 16px;
+    
+}
+
+.btn-send a{
+    color: #EFEFEF;
+    text-decoration: none !important;
+}
+
+.btn-send a:hover{
+    color: #EFEFEF;
+    text-decoration: none !important;
+}
+
+/* .popularfood::after{
+    content: "";
+    position: absolute;
+    transform: translate(-70%, 55%);
+    top: 50;
+    left: 10;
+    width: 20%;
+    height: 60%;
+    background: transparent;
+    border: 2px solid #f1bc15;
+    border-radius: 10px;
+    z-index: -1;
+} */
+
+/* new recipe */
+
+.kotak2 img{
+    margin-left: 140px;
+}
+
+.pfy2{
+    margin-top: -100px;
+    margin-left: 180px;
+    font-family: airbnb;
+    font-size: 48px;
+    color: #3F3A3A;
+}
+
+.rectangle{
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+    background-color: #EFC81A;
+    position: absolute;
+    z-index: -1;
+}
+
+.burger{
+    height: 500px;
+    width: 600px;
+    margin-left: 120px;
+    margin-top: 130px;
+}
+
+.quick2{
+    margin-top: 150px !important;
+}
+
+.quick2 h1{
+    font-family: airbnb;
+    color: #3F3A3A;
+    font-size: 56px;
+}
+
+.quick2 p{
+    font-family: airbnb2;
+    color: #3F3A3A;
+    font-size: 24px;
+}
+
+.line{
+    width: 100px;
+}
+
+/* popular recipe */
+.poprecipe{
+    margin-top: 250px;
+}
+
+.kotak4 img{
+    height: 150px;
+    margin-left: -60px;
+}
+
+.precipe{
+    margin-top: -100px;
+    margin-left: -20px;
+    font-family: airbnb;
+    font-size: 48px;
+    color: #3F3A3A;
+}
+
+.foodbox{
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.gambar{
+    height: 40vh;
+    width: 100%;
+}
+
+.titlefood{
+    position: absolute;
+    font-family: airbnb;
+    font-size: 18px;
+    font-weight: bold;
+    bottom: 10px;
+    left: 20px;
+    
+}
+
+/* footer */
+.footer{
+    margin-top: 50px;
+}
+.footer-style{
+    height: 50vh;
+    background-color: #EFC81A;
+}
+
+.footer-style h1{
+    font-family: airbnb;
+    color: #2E266F;
+    font-size: 62px;
+}
+
+.footer-style p{
+    font-family: airbnb;
+    color: #707070;
+    font-size: 24px;
+}
+
+.footer-bottom p{
+    font-family: Poppins;
+    font-size: 16px;
+    color: #707070;
+}
+
+
+@media (max-width: 640px ){
+    .judul{
+        height: 100vh; 
+    }
+    .title{
+        font-size: 20px;
+        margin-top: -300px;
+        margin-left: 10px;
+    }
+    .cari{
+        width: 300px !important;
+        margin-left: 10px ;
+    }
+    .decoration img{
+        width: 360px;
+        height: 300px ;
+        right: 15px;
+        margin-top: 50px;
+    }
+
+
+    /* pfy */
+    .kotak{
+        margin-left: -130px;
+    }
+    .kotak img{
+        height: 100px;  
+        margin-top: 20px;
+    }
+    .pfy{
+        font-size: 30px;
+    }
+    .square{
+        width: 320px;
+        height: 280px;
+        margin-left: 10px;
+    }
+    .bread{
+        width: 320px;
+        height: 300px;
+        margin-left: -5px;
+    }
+    .quick h1{
+        margin-top: -500px !important;
+        margin-left: -10px;
+        font-size: 30px;
+    }
+
+    .quick p{
+        font-size: 13px;
+        margin-left: -10px;
+
+    }
+
+    /* new recipe */
+    .kotak2{
+        margin-top: 100px;
+        margin-left: -130px;
+    }
+
+    .kotak2 img{
+        height: 100px;  
+    }
+
+    .pfy2{
+        font-size: 30px;
+    }
+    .rectangle{
+        width: 300px;
+        height: 300px;
+        margin-left: -30px;
+    }
+    .burger{
+        width: 350px;
+        height: 300px;
+        margin-left: 20px;
+    }
+
+    .quick2 h1{
+        margin-top: -100px !important;
+        margin-left: -10px;
+        font-size: 30px;
+    }
+
+    .quick2 p{
+        font-size: 13px;
+        margin-left: -25px;
+    }
+
+    /* popular  recipe*/
+    .kotak4{
+        margin-left: 50px;
+    }
+
+    .kotak4 img{
+        height: 100px;  
+    }
+    .precipe{
+        font-size: 30px;
+    }
+
+}

@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'airbnb';
+    src: url(../../asset/fonts/AirbnbCereal_W_Bd.otf);
+
+    font-family: 'airbnb2';
+    src: url(../../asset/fonts/AirbnbCereal_W_Lt.otf);
+
+}
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    div{
+        font-family: Inter;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    div{
+        font-family: Inter;
+    }
+
+body{
+    /* background-color: green !important; */
+    margin: 0px;
+    padding: 0px;
+}
+
+.active {
+    font-weight: bold !important;
+    border-bottom: #2E266F 5px solid !important;
+  }
+
+/* navbar */
+.nav-link{
+    font-family: airbnb;
+    font-size: 18px !important;
+    color: #2E266F !important;
+    text-decoration: none;
+}
+
+/* profile */
+.photo{
+    height: 80vh;
+    width: 100%;
+}
+
+.pencil{
+    color: yellow;
+    margin-left: 150px;
+}
+
+.collcostum{
+    width: 500px;
+}
+
+.edit{
+    font-family: airbnb;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #3F3A3A;
+    background-color: #E7E7E7 !important;
+}
+
+.edit a{
+    text-decoration: none !important;
+    color: #3F3A3A;
+}
+
+.edit a:hover{
+    color: black;
+}
+
+.line{
+    margin: 0px !important;
+    border: 1px solid !important;
+    width: 50vh;
+}
+
+.username{
+    font-family: airbnb;
+    color: #000000;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+/* menu food */
+.menu{
+    height: 40vh;
+}
+
+.myrecipe{
+    font-family: airbnb;
+    color: #000000;
+    font-weight: bold;
+    font-size: 24px !important;
+}
+
+.savedrecipe{
+    font-family: airbnb;
+    color: #000000;
+    font-weight: bold;
+    font-size: 24px !important;
+}
+
+.likedrecipe{
+    font-family: airbnb;
+    color: #000000;
+    font-weight: bold;
+    font-size: 24px !important;
+}
+
+.linemenu{
+    border-top: 2px solid !important;
+    width: 100%;
+}
+
+/* .kolom1{
+    margin-right: 100px;
+} */
+/* 
+#foods1{
+    
+} */
+
+.foodbox{
+    width: 100%;
+    position: relative;
+}
+
+.gambar{
+    height: 30vh;
+    width: 100%;
+    border-radius: 15px;
+}
+/* .gambar:hover{
+    transform: scale(1.1) ;
+} */
+
+.btndetail{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 10px;
+    right: 100px;
+    color: blue;
+}
+
+
+.btnupdate{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 10px;
+    right: 60px;
+    color: green;
+}
+
+.btndelete{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 10px;
+    right: 20px;
+    color: red;
+}
+
+.btndetail:hover{
+    background-color: #EFC81A;
+    transform: scale(2) ;
+}
+
+.btnupdate:hover{
+    background-color: #EFC81A;
+    transform: scale(2) ;
+}
+
+.btndelete:hover{
+    background-color: #EFC81A;
+    transform: scale(2) ;
+}
+
+.titlefood{
+    position: absolute;
+    font-family: airbnb;
+    font-size: 28px;
+    font-weight: bold;
+    bottom: 10px;
+    left: 20px;
+    color: #FFFFFF;
+}
+
+.titlefood:hover{
+    background-color: #EFC81A;
+    transform: scale(1.1) ;
+}
+
+
+
+/* footer */
+/* .footer-style p{
+    background-color: #EFC81A;
+    font-family: Poppins;
+    font-size: 16px;
+    color: #707070;
+} */
+
+
+@media (max-width: 640px ){
+    /* profile  */
+    /* #collapseExample{
+        width: 200px;
+    } */
+
+    .collcostum{
+        width: 200px;
+    }
+
+    /* menu */
+    .menucostum{
+        margin-left: -50px !important;
+    }
+
+    .myrecipe{
+        font-size: 20px !important; 
+    }
+
+    .savedrecipe{
+        font-size: 20px !important; 
+    }
+
+    .likedrecipe{
+        font-size: 20px !important; 
+    }
+
+}

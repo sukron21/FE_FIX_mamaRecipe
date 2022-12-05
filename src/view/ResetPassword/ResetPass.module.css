@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'airbnb';
+    src: url(../../asset/fonts/AirbnbCereal_W_Bd.otf);
+
+    font-family: 'airbnb2';
+    src: url(../../asset/fonts/AirbnbCereal_W_Lt.otf);
+
+}
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    div{
+        font-family: Inter;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    div{
+        font-family: Inter;
+    }
+
+/* leftside */
+.leftside{
+    background-image: linear-gradient(#efc81ac1, #efc81a89),url(../../asset/img/image15.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* rightside */
+
+.cnp{
+    font-family: Inter;
+    margin-top:23px;
+    margin-bottom: 13px;
+    color: #696F79;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.newpass{
+    font-family: Inter;
+    margin-top:23px;
+    margin-bottom: 13px;
+    color: #696F79;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+#inputCode:focus {
+    outline: none !important;
+    border: 1px solid #efc81a;
+    box-shadow: 0 0 10px #719ece;
+}
+
+.checkbox{
+    background-color: #EFC81A !important;
+    color: white !important;
+    margin-top: 30.67px !important;
+}
+
+.term{
+    font-family: Inter;
+    color: #696F79;
+    margin-top: 24px !important;
+}
+
+
+.btnreset{
+    background-color: #EFC81A !important;
+    color: white !important;
+    margin-top: 24px;
+    font-family: Inter !important;
+}
+
+.btnreset:hover{
+    background-color: #EFC81A !important;
+    color: white !important;
+}
+
+.btnreset:focus{
+    outline: none !important;
+    border: 1px solid #efc81a;
+    box-shadow: 0 0 10px #719ece;
+}
+
+form div button a {
+    text-decoration: none;
+    color: white !important;
+}
+
+
+@media (max-width: 640px ){
+    .leftside{height: 100px;}
+    .logo{height: 100%;}
+}
+
+

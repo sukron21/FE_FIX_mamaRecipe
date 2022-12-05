@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'airbnb';
+    src: url(../../asset/fonts/AirbnbCereal_W_Bd.otf);
+
+    font-family: 'airbnb2';
+    src: url(../../asset/fonts/AirbnbCereal_W_Lt.otf);
+
+}
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    div{
+        font-family: Inter;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    div{
+        font-family: Inter;
+    }
+
+body{
+    /* background-color: green !important; */
+    margin: 0px;
+    padding: 0px;
+}
+
+/* navbar */
+.nav-link{
+    font-family: airbnb;
+    font-size: 18px !important;
+    color: #2E266F !important;
+    text-decoration: none;
+}
+/* judul dan gambar */
+.title{
+    font-family: airbnb;
+    font-weight: bold;
+    color: #2E266F;
+    margin-top: 100px;
+}
+
+.foodbox{
+    width: 100%;
+    position: relative;
+}
+
+.gambar{
+    height: 30vh;
+    width: 100%;
+    border-radius: 15px;
+   
+}
+
+.btndetail{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 100px;
+    right: 250px;
+    color: transparent;
+}
+/* .btndetail fa-eye{
+    align-items: center;
+    justify-content: center;
+} */
+
+
+/* .btnupdate{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 10px;
+    right: 60px;
+    color: green;
+}
+
+.btndelete{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 10px;
+    right: 20px;
+    color: red;
+} */
+
+.btndetail:hover{
+   
+    color: aliceblue;
+    transform: scale(6) ;
+}
+
+
+/* .btnupdate:hover{
+    background-color: #EFC81A;
+    transform: scale(2) ;
+}
+
+.btndelete:hover{
+    background-color: #EFC81A;
+    transform: scale(2) ;
+} */
+
+.titlefood{
+    position: absolute;
+    font-family: airbnb;
+    font-size: 28px;
+    font-weight: bold;
+    bottom: 10px;
+    left: 20px;
+    color: #ffff;
+}
+
+.titlefood:hover{
+    background-color: #EFC81A;
+    transform: scale(1.1) ;
+}
+
+
+@media (max-width: 640px ){
+    
+    /* ingredients */
+    .subingredients{
+        font-size: 25px;
+
+    }
+    /* footer */
+    .footer-style h1{
+        font-size: 40px;
+    }
+    .footer-style p{
+        font-size: 20px;
+    }
+
+    .footer-bottom p{
+        font-size: 15px;
+    }
+
+}
+
+
+

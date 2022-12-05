@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'airbnb';
+    src: url(../../asset/fonts/AirbnbCereal_W_Bd.otf);
+
+    font-family: 'airbnb2';
+    src: url(../../asset/fonts/AirbnbCereal_W_Lt.otf);
+
+}
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    div{
+        font-family: Inter;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    div{
+        font-family: Inter;
+    }
+
+body{
+    /* background-color: green !important; */
+    margin: 0px;
+    padding: 0px;
+}
+/* navbar */
+.nav-link{
+    font-family: airbnb;
+    font-size: 18px !important;
+    color: #2E266F !important;
+    text-decoration: none;
+}
+
+.active {
+    font-weight: bold !important;
+    border-bottom: #2E266F 5px solid !important;
+  }
+
+/* form input */
+.addphoto{
+    margin-top: 100px;
+    border-radius: 10px;
+    background-color:#F6F5F4 ;
+    height: 350px;
+    width: 100%;
+    /* width: 650px; */
+}
+
+.costuminput{
+    background-color:#F6F5F4 !important;
+}
+
+.btn-send{
+    font-family: Inter !important;
+    font-size: 16px;
+    background-color: #EFC81A !important;
+}
+
+
+
