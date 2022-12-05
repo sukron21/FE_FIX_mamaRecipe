@@ -223,7 +223,7 @@ const Profile = () => {
             <div className=" collapse multi-collapse2" id="foods1">
               <div className="row d-flex flex-row  kolom2">
                 {detailyo.isLoading ? (
-                  <h2>Loading</h2>
+                  <h2>Loading...</h2>
                 ) : detailyo.isError ? (
                   <h2>error</h2>
                 ) : detailyo.data == 0 ? (
