@@ -172,7 +172,7 @@ const Profile = () => {
           </div>
         </div>
       </section>
-{/* {JSON.stringify(detailyo)} */}
+{JSON.stringify(detailyo)}
       {/* <!-- menu --> */}
       <section className="menu">
         <div className="container-fluid">
