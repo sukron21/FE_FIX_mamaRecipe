@@ -1,4 +1,5 @@
 import axios from "axios";
+import { Navigate } from "react-router-dom";
 
 export const addrecipe = (body) => {
     return new Promise((resolve, reject) => {
@@ -9,6 +10,7 @@ export const addrecipe = (body) => {
         })
             .then((response) => {
                 resolve(response)
+                return Navigate('/landingpage')
             })
             .catch((err) => {
                 reject(err)
