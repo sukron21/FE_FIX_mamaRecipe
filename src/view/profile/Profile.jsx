@@ -86,7 +86,7 @@ const Profile = () => {
   };
   return (
     <>
-      {/* {JSON.stringify(detailyo)} */}
+      
       {/* <!-- navbar --> */}
       <nav className="navbar navbar-expand-lg fixed-top bg-white">
         <div className="container">
@@ -133,6 +133,7 @@ const Profile = () => {
           </div>
         </div>
       </nav>
+      
       {/* <!-- photo profile --> */}
       <section className="profile">
         <div className="container-fluid">
@@ -171,7 +172,7 @@ const Profile = () => {
           </div>
         </div>
       </section>
-
+{/* {JSON.stringify(detailyo)} */}
       {/* <!-- menu --> */}
       <section className="menu">
         <div className="container-fluid">
