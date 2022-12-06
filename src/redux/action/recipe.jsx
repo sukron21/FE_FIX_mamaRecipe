@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const addrecipe = (body) => {
     return new Promise((resolve, reject) => {
-        axios.post(`${process.env.REACT_APP_BACKEND_URL}/recipe`, body, {
+        axios.post(`${process.env.REACT_APP_BACKEND_URL}/recipe/upload`, body, {
             headers: {
                 "Content-Type": "multipart/form-data",
             },
