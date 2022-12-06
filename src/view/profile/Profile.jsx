@@ -42,7 +42,7 @@ const Profile = () => {
   }, [sort, page]);
 
   const handleSortasc = () => {
-    if (sort == "asc") {
+    if (sort === "asc") {
       setSort("desc");
     } else {
       setSort("asc");

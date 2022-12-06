@@ -45,8 +45,8 @@ export const getRecipeSearch = (titleSearch, sort, limit, page) => {
     return {
         type: 'GET_LIST_DETAIL_PROFILE',
         payload: axios({
-            url: `${process.env.REACT_APP_BACKEND_URL
-                }/recipe/listsearch/${titleSearch}?sort=${sort}&limit=${limit}${page ? `&page=${page}` : ""
+            url: `${process.env.REACT_APP_BACKEND_URL}
+            /recipe/listsearch/${titleSearch}?sort=${sort}&limit=${limit}${page ? `&page=${page}` : ""
                 }`,
             method: "GET"
         })
