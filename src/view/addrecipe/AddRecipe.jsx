@@ -53,12 +53,12 @@ const AddRecipe = () => {
                     // }
                     console.log(response);
                     setImage("");
-                    if (response.data.status != 'success') {
+                    if (response.data.status !== 'success') {
                         alert(response.data.message)
                     } else {
                         alert("data berhasil ditambahkan")
                         console.log(response.data)
-                        return navigate('/profile')
+                        return navigate('/landingpage')
                     }
                     // console.log(response.data)
                     // return navigate('/')

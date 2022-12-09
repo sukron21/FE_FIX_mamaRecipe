@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import StyleLanding from './LandingPage.module.css'
 import UserIcon from '../../asset/img/Usericon.png'
-import PhotoEgg from '../../asset/img/eggsquare.png'
+import PhotoEgg from '../../asset/img/sanwihlanding.png'
 import PhotoProfile from '../../asset/img/profile.png'
 
 import Square from '../../asset/img/kotak.png'
@@ -75,7 +75,7 @@ const LandingPage = () => {
                                     <div className="icon" onClick={logout}>
                                         <img src={PhotoProfile} alt="" style={{height:"50px"}} className='me-3' />
                                         {/* login  */}
-                                        {data.username}
+                                        {data.name}
                                     </div>
                                 </Link></li>
                             </ul>

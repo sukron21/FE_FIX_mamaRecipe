@@ -66,8 +66,8 @@ body{
 
 .decoration img{
     position: absolute;
-    height: 480px;
-    width: 650px;
+    height: 75vh;
+    width:38vw;
     right: 100px;
 }
 .title{
@@ -258,6 +258,7 @@ body{
 .gambar{
     height: 40vh;
     width: 100%;
+    object-fit: contain;
 }
 
 .titlefood{
@@ -267,6 +268,7 @@ body{
     font-weight: bold;
     bottom: 10px;
     left: 20px;
+    margin-left: 60px;
     
 }
 
@@ -397,6 +399,16 @@ body{
     }
     .precipe{
         font-size: 30px;
+    }
+    .titlefood{
+        position: absolute;
+        font-family: airbnb;
+        font-size: 18px;
+        font-weight: bold;
+        bottom: 10px;
+        left: 20px;
+        margin-left: 20px;
+        
     }
 
 }

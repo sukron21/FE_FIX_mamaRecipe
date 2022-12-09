@@ -42,12 +42,16 @@ body{
     margin-top: 50px;
     width: 100%;
     position: relative;
+    /* border: 10px solid black; */
+    /* object-fit: cover; */
 }
 
 .titleimg{
-    height: 60vh;
+    height: 75vh;
     width: 100%;
-    margin-top: 70px;
+    /* margin-top: 70px; */
+    object-fit: cover;
+    border-radius: 15px;
 }
 
 .bookmark{

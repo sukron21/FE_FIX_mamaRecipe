@@ -1,5 +1,4 @@
 import axios from "axios";
-import { Navigate } from "react-router-dom";
 
 export const addrecipe = (body) => {
     return new Promise((resolve, reject) => {
@@ -10,7 +9,7 @@ export const addrecipe = (body) => {
         })
             .then((response) => {
                 resolve(response)
-                return Navigate('/landingpage')
+                
             })
             .catch((err) => {
                 reject(err)
@@ -55,7 +54,7 @@ export const getRecipeSearch = (titleSearch, sort, limit, page) => {
 
 export const updaterecipe = (form, id) => {
     return new Promise((resolve, reject) => {
-        axios.put(`${process.env.REACT_APP_BACKEND_URL}/recipe/${id}`, form, {
+        axios.put(`${process.env.REACT_APP_BACKEND_URL}/recipe/photo/${id}`, form, {
             headers: {
                 "Content-Type": "multipart/form-data",
             },
@@ -71,7 +70,7 @@ export const updaterecipe = (form, id) => {
 
 export const deleterecipe = (id) => {
     return new Promise((resolve, reject) => {
-        axios.delete(`${process.env.REACT_APP_BACKEND_URL}/recipe/photo/${id}`)
+        axios.delete(`${process.env.REACT_APP_BACKEND_URL}/recipe/${id}`)
             .then((response) => {
                 resolve(response)
             })

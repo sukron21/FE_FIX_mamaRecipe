@@ -88,7 +88,7 @@ const SearchRecipe = () => {
                     <div className="row">
                         <div className="col-md-12 align-items-center">
                             <h1 className={`text-center ${StyleSearchRecipe.title}`}>
-                                RECIPE : {titleSearch}
+                                {/* RECIPE : {titleSearch} */}
                             </h1>
                         </div>
                     </div>
@@ -103,7 +103,7 @@ const SearchRecipe = () => {
                             title.map((item) => (
                                 <div className={`col-md-4 my-3 d-flex flex-row ${StyleSearchRecipe.foodbox}`}>
                                     <div className=''>
-                                    <img src={`${process.env.REACT_APP_BACKEND_URL}/${item.photo}`} className={StyleSearchRecipe.gambar} />
+                                    <img src={`${process.env.REACT_APP_BACKEND_URL}/${item.photo_url}`} className={StyleSearchRecipe.gambar} />
                                     <p className={`mx-1 ${StyleSearchRecipe.titlefood}`}>
                                         {item.title}
                                     </p>

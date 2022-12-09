@@ -74,19 +74,6 @@ This app was built with some technologies below:
 <img src="/screenshoots/detail.PNG" alt="detail" />
 </details>
 
-<details>
-  <summary>
-   Update Page
-  </summary>
-<img src="/screenshoots/update.PNG" alt="update" />
-</details>
-
-<details>
-  <summary>
-  Video Page
-  </summary>
-<img src="/screenshoots/videostep.PNG" alt="update" />
-</details>
 
 
 ## Related Project

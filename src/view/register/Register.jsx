@@ -11,7 +11,7 @@ const Register = () => {
 
   const navigate = useNavigate()
   const [form, setForm] = useState({
-    username: '',
+    name: '',
     email: '',
     phone: '',
     createNewPass: '',
@@ -22,7 +22,7 @@ const Register = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     // console.log(form)
-    if (form.name == "" || form.email == "" || form.phone == "" || form.password == "") {
+    if (form.name === "" || form.email === "" || form.phone === "" || form.password === "") {
       alert('Semua input wajib diisi')
     } else {
       const body = {
