@@ -8,11 +8,9 @@ const CodeReset = () => {
     <>
         <div className="container-fluid">
       <div className="row">
-        {/* <!-- leftside --> */}
         <div className={`col-md-6 ${StyleCodeReset.leftside}`}>
           <img src={Logo} alt="logo" className={StyleCodeReset.logo}/>
         </div>
-        {/* <!-- rightside --> */}
         <div className="col-md-6 d-flex align-items-center rightside">
           <form className="row g-3 m-5">
             <div>

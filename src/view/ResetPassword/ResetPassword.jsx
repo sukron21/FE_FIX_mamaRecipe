@@ -8,16 +8,14 @@ const ResetPassword = () => {
     <>
         <div className="container-fluid">
       <div className="row">
-        {/* <!-- leftside --> */}
         <div className={`col-md-6 ${StyleResetPassword.leftside}`}>
           <img src={Logo} alt="logo" className={StyleResetPassword.logo}/>
         </div>
-        {/* <!-- rightside --> */}
         <div className="col-md-6  d-flex align-items-center rightside">
           <form className="row g-3 m-5">
             <div>
               <hr/>
-              <label htmlFor="label" className={StyleResetPassword.cnp}> Create New Password </label>
+              <label htmlFor="label" className={StyleResetPassword.cpass}> Create New Password </label>
               <input type="text" className="form-control" id="{StyleResetPassword.inputCode}" />
               <label htmlFor="label" className={StyleResetPassword.newpass}> New Password </label>
               <input type="text" className="form-control" id={StyleResetPassword.inputCode} />

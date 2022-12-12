@@ -8,11 +8,9 @@ const ForgotPassword = () => {
         <>
             <div className="container-fluid ">
                 <div className="row">
-                    {/* <!-- leftside --> */}
                     <div className={`col-md-6 ${StyleForgot.leftside}`}>
                         <img src={Logo} alt="logo" className={StyleForgot.logo} />
                     </div>
-                    {/* <!-- rightside --> */}
                     <div className="col-md-6 d-flex align-items-center rightside">
                         <form className="row g-3 m-5">
                             <h1 className={StyleForgot.title}>Forgot Password?</h1>

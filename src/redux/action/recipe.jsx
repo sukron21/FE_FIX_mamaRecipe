@@ -17,18 +17,6 @@ export const addrecipe = (body) => {
     })
 }
 
-// export const getRecipe = (limit, page) => {
-//     return  {
-//         type: 'GET_LIST_DETAIL_PROFILE',
-//         payload: axios ({
-//             url:`${process.env.REACT_APP_BACKEND_URL}/recipe?limit=${limit}${
-//                 page ? `&page=${page}` : ""
-//               }`,
-//             method:"GET"
-//         })
-//     }
-// }
-
 export const getRecipe = (sort, limit, page) => {
     return {
         type: 'GET_LIST_DETAIL_PROFILE',

@@ -101,7 +101,7 @@ body{
     background-color: white;
 }
 
-.kotak img{
+.ractangale img{
     margin-left: 140px;
 }
 
@@ -183,7 +183,7 @@ body{
 
 /* new recipe */
 
-.kotak2 img{
+.ractangale2 img{
     margin-left: 140px;
 }
 
@@ -236,7 +236,7 @@ body{
     margin-top: 250px;
 }
 
-.kotak4 img{
+.ractangale4 img{
     height: 150px;
     margin-left: -60px;
 }
@@ -322,10 +322,10 @@ body{
 
 
     /* pfy */
-    .kotak{
+    .ractangale{
         margin-left: -130px;
     }
-    .kotak img{
+    .ractangale img{
         height: 100px;  
         margin-top: 20px;
     }
@@ -355,12 +355,12 @@ body{
     }
 
     /* new recipe */
-    .kotak2{
+    .ractangale2{
         margin-top: 100px;
         margin-left: -130px;
     }
 
-    .kotak2 img{
+    .ractangale2 img{
         height: 100px;  
     }
 
@@ -390,11 +390,11 @@ body{
     }
 
     /* popular  recipe*/
-    .kotak4{
+    .ractangale4{
         margin-left: 50px;
     }
 
-    .kotak4 img{
+    .ractangale4 img{
         height: 100px;  
     }
     .precipe{

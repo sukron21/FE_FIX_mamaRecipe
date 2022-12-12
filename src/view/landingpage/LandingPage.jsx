@@ -4,8 +4,8 @@ import UserIcon from '../../asset/img/Usericon.png'
 import PhotoEgg from '../../asset/img/sanwihlanding.png'
 import PhotoProfile from '../../asset/img/profile.png'
 
-import Square from '../../asset/img/kotak.png'
-import SquareFood from '../../asset/img/kotakfood.png'
+import Square from '../../asset/img/ractangale.png'
+import SquareFood from '../../asset/img/ractangalefood.png'
 import PhotoBread from '../../asset/img/roti.png'
 import PhotoBurger from '../../asset/img/burgernewrecipe.png'
 import PhotoChickenKare from '../../asset/img/chickenkare.png'
@@ -52,7 +52,6 @@ const LandingPage = () => {
             {/* <!-- navbar --> */}
             <nav className="navbar navbar-expand-lg fixed-top">
                 <div className="container">
-                    {/* <!-- <a className="navbar-brand" href="#">Mama Recipe</a> --> */}
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -74,7 +73,6 @@ const LandingPage = () => {
                                 <li className="nav-link"> <Link to="/" className={`${StyleLanding['nav-link']} active`}>
                                     <div className="icon" onClick={logout}>
                                         <img src={PhotoProfile} alt="" style={{height:"50px"}} className='me-3' />
-                                        {/* login  */}
                                         {data.name}
                                     </div>
                                 </Link></li>
@@ -83,7 +81,6 @@ const LandingPage = () => {
                     </div>
                 </div>
             </nav>
-            {/* <!-- section hero --> */}
             <section id={StyleLanding.hero}>
                 <div className={`${StyleLanding.leftside} px-0`}>
                     <div className={`${StyleLanding.left} g-0`}>
@@ -104,10 +101,9 @@ const LandingPage = () => {
                     </div>
                 </div>
             </section>
-            {/* <!-- section  popular for you--> */}
             <section id={StyleLanding.hero2}>
                 <div className="container-fluid">
-                    <div className={StyleLanding.kotak}>
+                    <div className={StyleLanding.ractangale}>
                         <img src={Square} alt="" />
                         <h1 className={StyleLanding.pfy}> Popular For You !</h1>
                     </div>
@@ -127,10 +123,9 @@ const LandingPage = () => {
                     </div>
                 </div>
             </section>
-            {/* <!-- new recipe --> */}
             <section className="newrecipe">
                 <div className="container-fluid px-0">
-                    <div className={StyleLanding.kotak2}>
+                    <div className={StyleLanding.ractangale2}>
                         <img src={Square} alt="" />
                         <h1 className={StyleLanding.pfy2}> New Recipe</h1>
                     </div>
@@ -149,10 +144,9 @@ const LandingPage = () => {
                     </div>
                 </div>
             </section>
-            {/* <!-- popular recipe --> */}
             <section className={StyleLanding.poprecipe}>
                 <div className="container">
-                    <div className={StyleLanding.kotak4}>
+                    <div className={StyleLanding.ractangale4}>
                         <img src={Square} alt="" />
                         <h1 className={StyleLanding.precipe}> Popular Recipe </h1>
                     </div>
@@ -209,7 +203,6 @@ const LandingPage = () => {
                     </div>
                 </div>
             </section>
-            {/* footer */}
             <Footer />
         </>
     )

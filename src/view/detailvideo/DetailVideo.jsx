@@ -5,16 +5,12 @@ import StyleDetailVideo from './DetailVideo.module.css'
 const DetailVideo = () => {
   return (
     <>
-      {/* <!-- kotak kuning --> */}
-      <section className="kotakkuning">
-        <div className={StyleDetailVideo.kotak}>
+      <section className="ractangalekuning">
+        <div className={StyleDetailVideo.ractangale}>
         </div>
       </section>
-
-      {/* <!-- navbar --> */}
       <nav className="navbar navbar-expand-lg mb-5">
         <div className="container">
-          {/* <!-- <a className="navbar-brand" href="#">Mama Recipe</a> --> */}
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -34,8 +30,6 @@ const DetailVideo = () => {
           </div>
         </div>
       </nav>
-
-      {/* <!-- video --> */}
       <section className="detailvideo">
         <div className="container-fluid">
           <div className="row">

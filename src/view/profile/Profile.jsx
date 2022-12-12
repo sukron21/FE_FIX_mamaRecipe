@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import StyleProfile from "./Profile.module.css";
 import PhotoProfile from "../../asset/img/profile.png";
-import PhotoFood1 from "../../asset/img/bombchicken.png";
-import PhotoFood2 from "../../asset/img/bananaspancake.png";
+import PhotoFoodchiken from "../../asset/img/bombchicken.png";
+import PhotoFoodbananas from "../../asset/img/bananaspancake.png";
 import Footer from "../../Component/Footer";
 import { Link, useNavigate } from "react-router-dom";
 import { getRecipe, deleterecipe } from "../../redux/action/recipe";
@@ -16,25 +16,13 @@ const Profile = () => {
   const [page, setPage] = useState(1);
   const [sort, setSort] = useState("asc");
 
-  const detailyo = useSelector((state) => {
-    return state.detailyo;
+  const detailprofile = useSelector((state) => {
+    return state.detailprofile;
   });
 
   useEffect(() => {
     dispatch(
       getRecipe(sort, 4, page)
-      // getRecipe(sort, 3, page)
-      // .then((response) => {
-      //   // console.log(response)
-      //   setTimeout(() => {
-      //     setRecipe(response.data.rows)
-      //     setLoading(false);
-      //   }, 2000);
-      //   // console.log(response)
-      // })
-      // .catch((error) => {
-      //   console.log(error);
-      // })
     );
   }, [sort, page, dispatch]);
 
@@ -62,8 +50,6 @@ const Profile = () => {
 
   const deleteFoods = (id, e) => {
     e.preventDefault();
-    // axios
-    //   .delete(`${process.env.REACT_APP_BACKEND_URL}/recipe/${id}`)
     dispatch(
       deleterecipe(id)
         .then((response) => {
@@ -84,10 +70,8 @@ const Profile = () => {
   return (
     <>
       
-      {/* <!-- navbar --> */}
       <nav className="navbar navbar-expand-lg fixed-top bg-white">
         <div className="container">
-          {/* <!-- <a className="navbar-brand" href="#">Mama Recipe</a> --> */}
           <button
             className="navbar-toggler"
             type="button"
@@ -130,8 +114,6 @@ const Profile = () => {
           </div>
         </div>
       </nav>
-      
-      {/* <!-- photo profile --> */}
       <section className="profile">
         <div className="container-fluid">
           <div className="row">
@@ -161,7 +143,6 @@ const Profile = () => {
                 </div>
               </div>
               <h1 className={`${StyleProfile.username} mt-5`}>
-                {/* Garneta Sharina  */}
                 {data.name}
               </h1>
               <hr className={StyleProfile.line} />
@@ -169,8 +150,6 @@ const Profile = () => {
           </div>
         </div>
       </section>
-{/* {JSON.stringify(detailyo)} */}
-      {/* <!-- menu --> */}
       <section className="menu">
         <div className="container-fluid">
           <div className="row">
@@ -210,24 +189,16 @@ const Profile = () => {
               </p>
             </div>
             <hr className={StyleProfile.linemenu} />
-            {/* <p className="text-center">sort By</p>
-            <button
-              className="btn btn-outline-primary d-grid gap-2 col-1 mx-auto"
-              // disabled={detailyo.data <= 0}
-              onClick={() => handleSortasc()}
-            >
-              {sort.toUpperCase()}
-            </button> */}
             <div className=" collapse multi-collapse2" id="foods1">
               <div className="row d-flex flex-row  kolom2">
-                {detailyo.isLoading ? (
+                {detailprofile.isLoading ? (
                   <h2>Loading...</h2>
-                ) : detailyo.isError ? (
+                ) : detailprofile.isError ? (
                   <h2>error</h2>
-                ) : detailyo.data === 0 ? (
+                ) : detailprofile.data === 0 ? (
                   <h2> Data Not Found</h2>
                 ) : (
-                  detailyo.data.map((item) => {
+                  detailprofile.data.map((item) => {
                     return (
                       <>
                         <div
@@ -294,7 +265,7 @@ const Profile = () => {
                   <li style={{ marginLeft: 3 }} className="page-item">
                     <button
                       className="btn btn-primary-custom page-link"
-                      disabled={detailyo.data <= 0}
+                      disabled={detailprofile.data <= 0}
                       onClick={() => NextPage()}
                     >
                       Next
@@ -303,7 +274,7 @@ const Profile = () => {
                   {/* <p className="text-center">sort By</p> */}
             <button
               className="btn btn-primary-custom"
-              // disabled={detailyo.data <= 0}
+              // disabled={detailprofile.data <= 0}
               onClick={() => handleSortasc()}
             >
               {sort.toUpperCase()}
@@ -318,7 +289,7 @@ const Profile = () => {
                 <div className="collapse multi-collapse" id="foods1">
                   <div className={StyleProfile.foodbox}>
                     <img
-                      src={PhotoFood1}
+                      src={PhotoFoodchiken}
                       alt=""
                       className={StyleProfile.gambar}
                     />
@@ -332,7 +303,7 @@ const Profile = () => {
                 <div className="collapse multi-collapse" id="foods1">
                   <div className={StyleProfile.foodbox}>
                     <img
-                      src={PhotoFood2}
+                      src={PhotoFoodbananas}
                       alt=""
                       className={StyleProfile.gambar}
                     />

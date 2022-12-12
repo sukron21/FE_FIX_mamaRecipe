@@ -34,14 +34,13 @@ body{
     border-bottom: #2E266F 5px solid !important;
   }
 
-/* form input */
+
 .addphoto{
     margin-top: 100px;
     border-radius: 10px;
     background-color:#F6F5F4 ;
     height: 350px;
     width: 100%;
-    /* width: 650px; */
 }
 
 .costuminput{

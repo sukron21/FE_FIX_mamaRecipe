@@ -12,7 +12,6 @@ const AddRecipe = () => {
     const navigate = useNavigate()
 
     const hiddenFileInput = useRef(null);
-    // const navigate = useNavigate();
     const [image, setImage] = useState('');
 
     const handleClick = (event) => {
@@ -27,7 +26,6 @@ const AddRecipe = () => {
     const [form, setForm] = useState({
         title: '',
         ingredients: '',
-        // created_at:''
     })
 
     const onSubmit = (e) => {
@@ -38,19 +36,9 @@ const AddRecipe = () => {
       body.append('title', form.title )
       body.append('ingredients', form.ingredients )
       body.append('photo', image)
-
-            // const body = {
-            //     photo: form.photo,
-            //     title: form.title,
-            //     ingredients: form.ingredients,
-            //     video: form.video
-            // }
             dispatch(
                 addrecipe(body)
                 .then((response) => {
-                    // if(response.data.code !== 200){
-                    //     alert('error:' + response.data.message)
-                    // }
                     console.log(response);
                     setImage("");
                     if (response.data.status !== 'success') {
@@ -60,8 +48,6 @@ const AddRecipe = () => {
                         console.log(response.data)
                         return navigate('/landingpage')
                     }
-                    // console.log(response.data)
-                    // return navigate('/')
                 }).catch((err) => {
                     console.error(err)
                 })
@@ -72,10 +58,8 @@ const AddRecipe = () => {
 
     return (
         <>
-            {/* <!-- navbar --> */}
             <nav className="navbar navbar-expand-lg fixed-top bg-white">
                 <div className="container">
-                    {/* <!-- <a className="navbar-brand" href="#">Mama Recipe</a> --> */}
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -95,7 +79,6 @@ const AddRecipe = () => {
                     </div>
                 </div>
             </nav>
-            {/* <!-- form input add recipe --> */}
             <section className="addrecipe">
                 <div className="container">
                     <div className="row">
@@ -130,7 +113,6 @@ const AddRecipe = () => {
                     </div>
                 </div>
             </section>
-            {/* <!-- footer --> */}
             <Footer />
 
         </>

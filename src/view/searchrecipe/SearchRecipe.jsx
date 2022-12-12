@@ -120,10 +120,6 @@ const SearchRecipe = () => {
                         }
 
                     </div>
-                    {/* <div class="d-flex flex-row gap-2 col-2 mx-auto">
-                        <button class="btn btn-primary" type="button">PREV</button>
-                        <button class="btn btn-primary" type="button">NEXT</button>
-                    </div> */}
                 </div>
             </section>
             <Footer />

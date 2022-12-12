@@ -21,7 +21,6 @@ const Register = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    // console.log(form)
     if (form.name === "" || form.email === "" || form.phone === "" || form.password === "") {
       alert('Semua input wajib diisi')
     } else {
@@ -38,20 +37,14 @@ const Register = () => {
       } else {
         dispatch(
           register(body)
-            // axios.post(`${process.env.REACT_APP_BACKEND_URL}/register`, body)
             .then((response) => {
-              // if(response.data.code !== 200){
-              //     alert('error:' + response.data.message)
-              // }
+
               if (response.data.status != 'success') {
                 alert(response.data.message)
               } else {
                 alert("data berhasil ditambahkan")
-                // console.log(response.data)
                 return navigate('/')
               }
-              // console.log(response.data)
-              // return navigate('/')
             }).catch((err) => {
               console.error(err)
             })
@@ -66,11 +59,9 @@ const Register = () => {
     <>
       <div className="container-fluid ">
         <div className="row">
-          {/* <!-- leftside --> */}
           <div className={`col-md-6  ${StyleRegister.leftside}`}>
             <img src={Logo} alt="logo" className={StyleRegister.logo} />
           </div>
-          {/* <!-- rightside --> */}
           <div className="col-md-6 d-flex align-items-center rightside">
             <form className="row g-3 m-5" onSubmit={(e) => onSubmit(e)}>
               <h1 className={StyleRegister.title}>Let’s Get Started !</h1>

@@ -19,10 +19,8 @@ const Login = () => {
     const onSubmit = (e) => {
         e.preventDefault();
         console.log(form)
-        //root dari backend
         dispatch(
             login(form)
-            // axios.post(`${process.env.REACT_APP_BACKEND_URL}/login`, form)
             .then((response) => {
                 console.log(response.data)
                 if (response.data.status !== 'success') {
@@ -44,11 +42,9 @@ const Login = () => {
         <>
             <div className="container-fluid ">
                 <div className="row">
-                    {/* <!-- leftside --> */}
                     <div className={`col-md-6  ${StyleLogin.leftside}`}>
                         <img src={Logo} alt="logo" className={StyleLogin.logo} />
                     </div>
-                    {/* <!-- rightside --> */}
                     <div className="col-md-6 d-flex align-items-center rightside">
                         <form onSubmit={(e) => onSubmit(e)} className="row g-3 m-5">
                             <h1 className={StyleLogin.welcome}>Welcome</h1>
