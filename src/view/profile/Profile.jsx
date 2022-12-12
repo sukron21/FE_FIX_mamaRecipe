@@ -207,8 +207,9 @@ const Profile = () => {
                         >
                           <div className="">
                             <img
-                              src={`${process.env.REACT_APP_BACKEND_URL}/${item.photo_url}`}
+                              src={item.photo_url}
                               className={StyleProfile.gambar}
+                              alt='#'
                             />
                             <p className={`mx-1 ${StyleProfile.titlefood}`}>
                               {item.title}

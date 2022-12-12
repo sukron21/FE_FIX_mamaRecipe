@@ -16,46 +16,18 @@ const SearchRecipe = () => {
     const [queryParam] = useSearchParams();
     const titleSearch = queryParam.get("title");
     const [title, setTitle] = useState([]);
-    // const [ingredient, setIngredient] = useState("");
-    // const [image, setImage] = useState("");
 
     useEffect(() => {
-        // axios
-        //     .get(`${process.env.REACT_APP_BACKEND_URL}/recipe/search/${titleSearch}`)
-        // dispatch(
-           
-        // )
              searchrecipedetail(titleSearch)
             .then((res) => {
-                // console.log(res.data);
+                console.log(res.data)
                 setTitle(res.data);
-                // console.log(title)
-                // setIngredient(res.data.ingredients.split("\r\n"));
-                // setImage(`${process.env.REACT_APP_BACKEND_URL}/${res.data.photo}`);
             })
             .catch((err) => {
                 console.log(err);
             })
 
     }, []);
-
-    // const [page, setPage] = useState ([])
-    // const [recipe, setRecipe] = useState([])
-
-    // const getDataPagination = () => {
-    //     axios
-    //         .get(`${process.env.REACT_APP_BACKEND_URL}/recipe/`)
-    //     .then((res)=> {
-            
-    //         setRecipe(res.data)
-    //         console.log(recipe)
-    //     })
-    //     .catch((err) => {
-    //         console.log(err)
-    //     })
-    // }
-
-
     return (
         <>
             {/* <!-- navbar --> */}
@@ -103,7 +75,7 @@ const SearchRecipe = () => {
                             title.map((item) => (
                                 <div className={`col-md-4 my-3 d-flex flex-row ${StyleSearchRecipe.foodbox}`}>
                                     <div className=''>
-                                    <img src={`${process.env.REACT_APP_BACKEND_URL}/${item.photo_url}`} className={StyleSearchRecipe.gambar} />
+                                    <img src={item.photo_url} className={StyleSearchRecipe.gambar} alt='#' />
                                     <p className={`mx-1 ${StyleSearchRecipe.titlefood}`}>
                                         {item.title}
                                     </p>
