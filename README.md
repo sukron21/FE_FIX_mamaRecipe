@@ -125,7 +125,7 @@ Contributors names and contact info:
 
 1. Rahmat Furqon
 
-
+- [deploy-vercel](https://fe-redux-mama-recipe.vercel.app/)
 - [Repository Backend](https://github.com/sukron21/FIX_BE_MamaRecipe)
 
 - [Linkedin](www.linkedin.com/in/furqon-rahmat)
