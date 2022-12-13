@@ -21,6 +21,23 @@ This app was built with some technologies below:
 - [Axios](https://axios-http.com/)
 - [Postgresql](https://www.postgresql.org/)
 
+### Structure Folder 
+
+<p id='structure-folder'>Frontend</p>
+<ul>
+  <li>public || <span><b><i>You can drop anything if that is accesseble for public</i></b></span></li>
+  <li>src</li>
+  <ul>
+    <li>assets ||<span><b><i>You can store various needs for this website, such as images, styles, javascript, and others.</i></b></span></li>
+    <li>components ||<span><b><i>This folder is for storing layouts, such as Navbar.</i></b></span></li>
+    <li>pages ||<span><b><i>This folder is the main folder in the website display for this application.</i></b></span></li>
+    <li>redux ||<span><b><i>Redux to set the global state, as well as the use of user data.</i></b></span></li>
+    <li>router ||<span><b><i>The router is used to set the endpoint of this application.</i></b></span></li>
+  </ul>
+</ul>
+<a href='#table-of-content'>Back to top</a>
+<hr/>
+
 ## Screenshoots
 <details>
   <summary>
@@ -101,3 +118,12 @@ Contributions are what make the open source community such an amazing place to b
 Install package : npm i
 
 Run Project : npm start
+
+## Authors
+
+Contributors names and contact info:
+
+1. Rahmat Furqon
+-[Repository Backend](https://github.com/sukron21/FIX_BE_MamaRecipe)
+
+- [Linkedin](www.linkedin.com/in/furqon-rahmat)
