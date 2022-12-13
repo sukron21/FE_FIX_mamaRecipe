@@ -99,7 +99,7 @@ This app was built with some technologies below:
 ## Related Project
 
 RESTful API for this web application, clone this for development Foodtemplate.\
-- [backend-MamaRecipe](https://github.com/vickomaris/BE_redux_MamaRecipe)
+- [backend-MamaRecipe](https://github.com/sukron21/FIX_BE_MamaRecipe)
 - [deploy-vercel](https://fe-redux-mama-recipe.vercel.app/)
 
 
