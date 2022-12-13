@@ -124,6 +124,7 @@ Run Project : npm start
 Contributors names and contact info:
 
 1. Rahmat Furqon
--[Repository Backend](https://github.com/sukron21/FIX_BE_MamaRecipe)
+
+- [Repository Backend](https://github.com/sukron21/FIX_BE_MamaRecipe)
 
 - [Linkedin](www.linkedin.com/in/furqon-rahmat)
