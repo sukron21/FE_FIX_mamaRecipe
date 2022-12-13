@@ -24,12 +24,16 @@ This app was built with some technologies below:
 ## Screenshoots
 <details>
   <summary>
-    Login & Register
+    Login
   </summary>
 <img src="/screenshoots/login.PNG" alt="Login Page" />
-<img src="/screenshoots/register.PNG" alt="Register Page" />
 </details>
-
+<details>
+  <summary>
+ Register
+ </summary>
+ <img src="/screenshoots/register.PNG" alt="Register Page" />
+ </details>
 <details>
   <summary>
     Home Page
@@ -56,7 +60,6 @@ This app was built with some technologies below:
   <summary>
     Profile
   </summary>
-<img src="/screenshoots/profile.PNG" alt="Profile" />
 <img src="/screenshoots/recipe.PNG" alt="ProfileFood" />
 </details>
 
