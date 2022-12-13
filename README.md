@@ -1,13 +1,5 @@
 <h1>Mama Recipe (FE)</h1>
 
-## Table of contents
-- [Description](#Description)
-- [Built With](#built-with)
-- [Screenshoots](#screenshoots)
-- [Related Project](#related-project)
-- [Contributing](#contributing)
-- [Run Project](#run-project)
-
 ## Description
 
 Mama Recipe is a food recipe web application, in this application users can create, view details, update and delete food recipes. The app is built using the PERN stack (Postgresql, Express JS, React JS, Node JS).
