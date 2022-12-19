@@ -15,10 +15,10 @@ const DetailRecipe = () => {
     const dispatch = useDispatch()
      // useselector untuk get reducer
     const detailya = useSelector((state) => {
-        return state.detailya
+        return state.detailrecipe
     })
 
-    console.log(detailya)
+    console.log(detailrecipe)
     
     const { id } = useParams();
     // const [detail, setDetail] = useState([]);
