@@ -14,23 +14,39 @@ const DetailRecipe = () => {
     //get action
     const dispatch = useDispatch()
      // useselector untuk get reducer
-    const detailrecipe = useSelector((state) => {
-        return state.detailrecipe
+    const detailya = useSelector((state) => {
+        return state.detailya
     })
 
-    console.log(detailrecipe)
+    console.log(detailya)
     
-    const {id}   = useParams();
+    const { id } = useParams();
+    // const [detail, setDetail] = useState([]);
+    //hook useEffect
     useEffect(() => {
         dispatch(
             detailrecipe(id)
         )
-    }, [dispatch, id]);
+    }, []);
+    //function "getPostById"
+    // const getById = async () => {
+    //     // addrecipe(id)
+    //     const response = await 
+    //     axios.get(
+    //         `${process.env.REACT_APP_BACKEND_URL}/recipe/${id}`
+    //     );
+    //     //get response data
+    //     const data = await response.data;
+    //     //assign data to state
+    //     setDetail(data);
+    // };
 
     return (
         <>
+            {/* <!-- navbar --> */}
             <nav className="navbar navbar-expand-lg fixed-top bg-white">
                 <div className="container">
+                    {/* <!-- <a className="navbar-brand" href="#">Mama Recipe</a> --> */}
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -50,10 +66,11 @@ const DetailRecipe = () => {
                     </div>
                 </div>
             </nav>
+            {/* <!-- judul dan gambar --> */}
             <section className="judul">
                 <div className="container-fluid">
                 {
-                    detailrecipe.data.map((item, index) => (
+                    detailya.data.map((item, index) => (
                         <div className="row">
                         <div key={index} className="col-md-12 mx-auto align-items-center ">
                             <h1 className={`text-center ${StyleDetailRecipe.title}`}>
@@ -65,11 +82,11 @@ const DetailRecipe = () => {
                 }
                     
                 {
-                    detailrecipe.data.map((item, index) => (
+                    detailya.data.map((item, index) => (
                         <div className="row">
                         <div  key={index} className=" col-md-8 offset-4 mx-auto">
                             <div className={StyleDetailRecipe.foodbox}>
-                                <img src={item.photo_url} className={`mx-auto d-block ${StyleDetailRecipe.titleimg}`} alt="" />
+                                <img src={`${process.env.REACT_APP_BACKEND_URL}/${item.photo}`} className={`mx-auto d-block ${StyleDetailRecipe.titleimg}`} alt="" />
                                 <button type="button" className={StyleDetailRecipe.bookmark} >
                                     <img src={bookmarkimg} alt="" />
                                 </button>
@@ -87,7 +104,7 @@ const DetailRecipe = () => {
             <section className="mt-5 recipe">
                 <div className="container">
                     {
-                        detailrecipe.data.map((item, index) => (                      
+                        detailya.data.map((item, index) => (                      
                             <div className="row">
                                 <div key={index} className="col-md-12">
                                     <h1 className={`text-start ${StyleDetailRecipe.ingredients}`}> Ingredients </h1>
