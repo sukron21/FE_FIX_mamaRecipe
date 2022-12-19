@@ -20,7 +20,7 @@ const DetailRecipe = () => {
 
     console.log(detailrecipe)
     
-    const { id } = useParams();
+    const {id}   = useParams();
     useEffect(() => {
         dispatch(
             detailrecipe(id)
