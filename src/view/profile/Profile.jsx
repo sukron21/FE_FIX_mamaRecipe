@@ -24,7 +24,7 @@ const Profile = () => {
     dispatch(
       getRecipe(sort, 4, page)
     );
-  }, []);
+  }, [sort, page, dispatch]);
 
   const handleSortasc = () => {
     if (sort === "asc") {
@@ -53,8 +53,8 @@ const Profile = () => {
     dispatch(
       deleterecipe(id)
         .then((response) => {
-          // console.log(response);
-          // console.log(response.data);
+          console.log(response);
+          console.log(response.data);
 
           const posts = recipe.filter((item) => item.id !== id);
           setRecipe({ data: posts });
