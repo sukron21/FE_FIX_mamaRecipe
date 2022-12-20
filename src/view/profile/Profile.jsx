@@ -24,7 +24,7 @@ const Profile = () => {
     dispatch(
       getRecipe(sort, 4, page)
     );
-  }, [sort, page, dispatch]);
+  }, []);
 
   const handleSortasc = () => {
     if (sort === "asc") {
