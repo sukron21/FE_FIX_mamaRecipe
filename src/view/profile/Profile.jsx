@@ -191,7 +191,7 @@ const Profile = () => {
             <hr className={StyleProfile.linemenu} />
             <div className=" collapse multi-collapse2" id="foods1">
               <div className="row d-flex flex-row  kolom2">
-                {/* {detailprofile.isLoading ? (
+                {detailprofile.isLoading ? (
                   <h2>Loading...</h2>
                 ) : detailprofile.isError ? (
                   <h2>error</h2>
@@ -246,7 +246,7 @@ const Profile = () => {
                       </>
                     );
                   })
-                )} */}
+                )}
               </div>
               <div className="d-flex justify-content-center">
                 <ul className="pagination">
