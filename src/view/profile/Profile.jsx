@@ -193,9 +193,11 @@ const Profile = () => {
               <div className="row d-flex flex-row  kolom2">
                 {detailprofile.isLoading ? (
                   <h2>Loading...</h2>
-                ) : detailprofile.isError ? (
-                  <h2>error</h2>
-                ) : detailprofile.data === 0 ? (
+                ) 
+                // : detailprofile.isError ? (
+                //   <h2>error</h2>
+                // )
+                 : detailprofile.data === 0 ? (
                   <h2> Data Not Found</h2>
                 ) : (
                   detailprofile.data.map((item) => {
